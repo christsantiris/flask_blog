@@ -3,8 +3,7 @@ from flaskblog import app
 from flaskblog import db
 from flaskblog.forms import RegistrationForm, LoginForm
 from flaskblog.models import User, Post
-from flask_bcrypt import Bcrypt
-bcrypt = Bcrypt()
+from flaskblog import bcrypt
 
 posts = [
     {
