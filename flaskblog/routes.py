@@ -29,7 +29,7 @@ def home():
 def about():
     return render_template('about.html', title='About')
 
-@app.route("/register", methods=['GET', 'POST'])
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():
