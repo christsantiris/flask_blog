@@ -15,6 +15,9 @@
 ### `post_1 = Post(title='Post 1', content='Post 1 content', user_id=user.id)'
 ### `db.session.add(post_1)`
 ### `db.session.commit()`
+### to delete records from table
+### db.session.query(Model).delete()
+### db.session.query(Model).filter(Model.property==123).delete()
 
 ### To vaidate User: `User.query.all() or User.query.first() or User.query.filter_by(username='<username>').all()`
 ### To validate Posts: `### `user = User.query.filter_by(username='<username>').all()` then `user.posts` or `post = Post.query.first()` then `post.user_id` or `post.author`
