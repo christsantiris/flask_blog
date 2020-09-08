@@ -9,24 +9,25 @@ import secrets
 import os
 from PIL import Image
 
-posts = [
-    {
-        'author': 'Chris Tsantiris',
-        'title': 'Blog Post 1',
-        'content': 'Post 1 Content',
-        'date_posted': 'July 15, 2020'
-    },
-    {
-        'author': 'Chris Tsantiris',
-        'title': 'Blog Post 2',
-        'content': 'Post 2 Content',
-        'date_posted': 'July 14, 2020'
-    }
-]
+# posts = [
+#     {
+#         'author': 'Chris Tsantiris',
+#         'title': 'Blog Post 1',
+#         'content': 'Post 1 Content',
+#         'date_posted': 'July 15, 2020'
+#     },
+#     {
+#         'author': 'Chris Tsantiris',
+#         'title': 'Blog Post 2',
+#         'content': 'Post 2 Content',
+#         'date_posted': 'July 14, 2020'
+#     }
+# ]
 
 @app.route('/')
 @app.route('/home')
 def home():
+    posts = Post.query.all()
     return render_template('home.html', posts=posts)
 
 @app.route('/about')
