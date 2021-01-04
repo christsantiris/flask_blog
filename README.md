@@ -1,6 +1,6 @@
 ## To run the app in debug mode
 
-### `python3 run.py` or `export FLASK_APP=run.py` and `export FLASK_DEBUG=1` (or on windows `set FLASK_app=run.py` and `set FLASK_DEBUG=1`) then `flask run`
+### `python3 -m virtualenv venv` then `source env/bin/activate` then python3 run.py` or `export FLASK_APP=run.py` and `export FLASK_DEBUG=1` (or on windows `set FLASK_app=run.py` and `set FLASK_DEBUG=1`) then `flask run`
 
 ## to set up db: 
 ### `in terminal run python3`
